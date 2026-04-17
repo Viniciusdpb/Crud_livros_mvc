@@ -1,14 +1,14 @@
 const express = require("express")
 const app = express()
 
-const userRoutes = require("./routes/userRoutes")
+const LivrosRoutes = require("./routes/LivrosRoutes")
 
 app.get("/", (request, response) => {
-    response.send("aaaaaaaaaa")
+    response.send("Nothing")
 })
 
 app.use(express.json())
 
-app.use("/", userRoutes)
+app.use("/", LivrosRoutes)
 
 module.exports = app

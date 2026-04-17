@@ -36,12 +36,12 @@ const update = (id, newLivro) => {
     //     age: newLivro.age
     // }
 
-    if (newLivro.name) {
-            livro.name = newLivro.name
+    if (newLivro.title) {
+            livro.title = newLivro.title
     }
 
-    if (newLivro.age) {
-            livro.age = newLivro.age
+    if (newLivro.author) {
+            livro.author = newLivro.author
     }
 
     return livro

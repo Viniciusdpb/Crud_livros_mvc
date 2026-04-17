@@ -1,0 +1,182 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1764769685260
+  modified: 1764769685260
+  description: ""
+collection:
+  - url: http://localhost:3000/
+    name: teste api
+    meta:
+      id: req_b7961b43a34347539f5a27e30caa6c22
+      created: 1773959398349
+      modified: 1774562854255
+      isPrivate: false
+      description: ""
+      sortKey: -1773959398349
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/livros
+    name: lista livros
+    meta:
+      id: req_c0c87ac6b379451995d1735a03f507a4
+      created: 1773960369195
+      modified: 1776382593112
+      isPrivate: false
+      description: ""
+      sortKey: -1773960369195
+    method: GET
+    body:
+      mimeType: multipart/form-data
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/livros
+    name: cadastra livros
+    meta:
+      id: req_5c7ac0d3732c41a09aadf3d4df1a2eec
+      created: 1773960461055
+      modified: 1776382580372
+      isPrivate: false
+      description: ""
+      sortKey: -1773960461055
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title" : "A arte da guerra",
+        	"author" : "Sun Tzu"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/livros/1
+    name: busca livro por id
+    meta:
+      id: req_b80fdf6561ad4a2b9811cba66495d8d5
+      created: 1774570548619
+      modified: 1776382403053
+      isPrivate: false
+      description: ""
+      sortKey: -1774570548619
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/livros/1
+    name: atualiza livro
+    meta:
+      id: req_eeb0a3c05a8c459c9624dbdd348a63ce
+      created: 1775172303036
+      modified: 1776382484530
+      isPrivate: false
+      description: ""
+      sortKey: -1774265504837
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title" : "Dom casmurro",
+        	"author" : "Machado de Assis"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/livros/1
+    name: remove livro por id
+    meta:
+      id: req_57056201e40a441093015069883c4ae4
+      created: 1775177648690
+      modified: 1776382422592
+      isPrivate: false
+      description: ""
+      sortKey: -1774418026728
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1776376692326
+    modified: 1776376692326
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1776376692323
+    modified: 1776376692323
+    isPrivate: false

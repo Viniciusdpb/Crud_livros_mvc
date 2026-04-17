@@ -1,7 +1,7 @@
-const userModel = require("../models/userModel")
+const livroModel = require("../models/livroModel")
 
 const getAllLivro = (req, res) => {
-    const Livros = userModel.findAll()
+    const Livros = livroModel.findAll()
 
     return res.send(Livros)
 }
@@ -29,7 +29,7 @@ const createLivro = (req, res) => {
         title: title,
         author: author
     }
-    const createdLivro = userModel.create(newLivro)
+    const createdLivro = livroModel.create(newLivro)
 
     res.status(201).json(createdLivro)
 }
@@ -37,7 +37,7 @@ const createLivro = (req, res) => {
 const getbyLivroId = (req, res) => {
     const id = req.params.id
 
-    const Livro = userModel.findById(id)
+    const Livro = livroModel.findById(id)
 
     if ( !Livro ) {
         return res.status(404).json({
@@ -56,12 +56,12 @@ const updateLivro = (req, res) => {
         author
     } = req.body
 
-    const userToUpdate = {
+    const livroToUpdate = {
         title: title,
         author: author
     }
 
-    const updatedLivro = userModel.update(id, userToUpdate)
+    const updatedLivro = livroModel.update(id, livroToUpdate)
 
     if ( !updatedLivro ) {
         return res.status(404).json({
@@ -75,7 +75,7 @@ const updateLivro = (req, res) => {
 const deleteLivro = (req, res) => {
     const id = Number(req.params.id)
     
-    const  Livro = userModel.remove(id)
+    const  Livro = livroModel.remove(id)
 
     if ( !Livro ) {
         return res.status(404).json({
