@@ -66,6 +66,7 @@ const updateLivro = (req, res) => {
     if ( !updatedLivro ) {
         return res.status(404).json({
             message: "Usuário não encontrado."
+    
         })
     }
 

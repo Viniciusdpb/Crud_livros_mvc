@@ -1,4 +1,4 @@
-const users = [
+const Livros = [
         {
             "id": 1,
             "title": "A arte da guerra",
@@ -6,9 +6,16 @@ const users = [
         },
         {
             "id": 2,
-            "name": "Dom Casmurro",
-            "idade": "Machado de Assis"
+            "title": "Memórias póstumas de Brás Cubas",
+            "author": "Machado de Assis"
+        },
+
+        {
+            "id": 3,
+            "title": "O Anticristo",
+            "author": "friedrich Nietzsche"
+            
         }
 ]
 
-module.exports = users
+module.exports = Livros
